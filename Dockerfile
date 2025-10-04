@@ -19,10 +19,11 @@ RUN apt-get update \
 # Add the safe.directory config for Git
 RUN git config --global --add safe.directory '*'
 
-# download and install Google Chrome
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-    && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" \
-    >> /etc/apt/sources.list.d/google-chrome.list \
+# download and install Google Chrome (modern apt-key-free way)
+RUN mkdir -p /etc/apt/keyrings \
+    && wget -qO /etc/apt/keyrings/google-linux-signing-key.gpg https://dl.google.com/linux/linux_signing_key.pub \
+    && echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/google-linux-signing-key.gpg] http://dl.google.com/linux/chrome/deb/ stable main" \
+       > /etc/apt/sources.list.d/google-chrome.list \
     && apt-get update \
     && apt-get install -y google-chrome-stable \
     && rm -rf /var/lib/apt/lists/*
