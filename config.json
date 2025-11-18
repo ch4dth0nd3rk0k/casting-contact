@@ -39,10 +39,10 @@
       "required": true
     },
     {
-      "label": "Phone Number (optional)",
+      "label": "Phone Number",
       "name": "phone",
       "type": "tel",
-      "required": false
+      "required": true
     },
     {
       "label": "Age",
@@ -888,39 +888,6 @@
       ]
     },
     {
-      "label": [
-        "Do you consent to your likeness, voice, or creative contributions",
-        "appearing in public content"
-      ],
-      "name": "public_consent",
-      "type": "selectbox",
-      "required": true,
-      "options": [
-        { "label": "--Select an option--", "value": "", "selected": true, "disabled": true },
-        { "label": "Yes", "value": "yes" },
-        { "label": "No", "value": "no" },
-        { "label": "Conditional (explain below)", "value": "conditional" }
-      ]
-    },
-    {
-      "label": "If conditional, please describe your consent limitations (optional)",
-      "name": "consent_notes",
-      "type": "textarea",
-      "required": false
-    },
-    {
-      "label": [
-        "Please type your initials to verify that you have reviewed my",
-        "<a href='https://linktr.ee/chadthunderkok' target='_blank'>",
-        "social media</a>.",
-        ", understand the purpose of this form, and you acknowledge that",
-        "you are submitting this form voluntarily for possible collaboration"
-      ],
-      "name": "initials_verification",
-      "type": "text",
-      "required": true
-    },
-    {
       "label": "Would you like to receive updates about future casting calls or creative projects",
       "name": "updates_opt_in",
       "type": "selectbox",
@@ -930,6 +897,40 @@
         { "label": "Yes", "value": "yes" },
         { "label": "No", "value": "no" }
       ]
+    },
+    {
+      "label": [
+        "<fieldset id='guest-release' style='border:1px solid #ddd;padding:1rem;border-radius:6px;'>",
+        "<legend style='font-weight:700;'>Guest Release &amp; Consent Agreement</legend>",
+
+        "<p>By submitting this form, you acknowledge and agree to the following:</p>",
+
+        "<ol>",
+        "<li><strong>1. CONSENT TO RECORDING:</strong><div>You consent to audio and/or video recording for the <em>Femme Phile</em> show or related projects.</div></li>",
+        "<br>",
+        "<li><strong>2. RIGHTS GRANTED:</strong><div>You grant the host irrevocable, worldwide, royalty-free rights to record, edit, use, publish, reproduce, and distribute your interview, in whole or in part, in any media now known or later developed.</div></li>",
+        "<br>",
+        "<li><strong>3. USE OF NAME, LIKENESS, &amp; VOICE:</strong><div>You authorize the use of your name, voice, likeness, image, and any biographical details you provide for production, distribution, marketing, and promotion.</div></li>",
+        "<br>",
+        "<li><strong>4. OWNERSHIP:</strong><div>You understand the host owns full rights to the recordings and you waive any right to inspect, approve, or request edits to the final materials.</div></li>",
+        "<br>",
+        "<li><strong>5. NO COMPENSATION:</strong><div>You participate voluntarily and understand you will not receive financial compensation.</div></li>",
+        "<br>",
+        "<li><strong>6. LIABILITY RELEASE:</strong><div>You release and hold harmless the host from any claims arising from recording, editing, publication, or distribution of the material.</div></li>",
+        "<br>",
+        "<li><strong>7. VOLUNTARY PARTICIPATION:</strong><div>You may decline any question during the interview, and you may withdraw before recording begins. After recording and publication, the host is not obligated to remove content.</div></li>",
+        "</ol>",
+
+        "<p><em>Please type your full legal name below to confirm you understand and accept these terms:</em></p>",
+
+        "</fieldset>"
+      ],
+      "name": "legal_release_signature",
+      "type": "text",
+      "required": true,
+      "custom": {
+        "placeholder": "Type your full legal name (legal signature)"
+      }
     }
   ]
 }
