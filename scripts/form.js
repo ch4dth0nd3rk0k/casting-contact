@@ -304,9 +304,9 @@ fetch('config.json')
         const label = document.createElement('label');
         if (Array.isArray(question.label)) {
             // Concatenate the label array with " " as separator
-            label.innerHTML = question.label.join(' ') + ':';
+            label.innerHTML = question.label.join(' ');
         } else {
-            label.innerHTML = question.label + ':';
+            label.innerHTML = question.label;
         }
         label.style.color = '#ddd'; // Light text color
         form.appendChild(label);
