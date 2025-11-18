@@ -27,25 +27,25 @@
   "ignore_file_upload": true,
   "questions": [
     {
-      "label": "Full Name",
+      "label": "Full Name:",
       "name": "name",
       "type": "text",
       "required": true
     },
     {
-      "label": "Email Address",
+      "label": "Email Address:",
       "name": "email",
       "type": "email",
       "required": true
     },
     {
-      "label": "Phone Number",
+      "label": "Phone Number:",
       "name": "phone",
       "type": "tel",
       "required": true
     },
     {
-      "label": "Age",
+      "label": "Age:",
       "name": "age",
       "type": "number",
       "required": true,
@@ -57,7 +57,7 @@
     {
       "label": [
         "Where can people find your public or creative work online?",
-        "List any social platforms where you share your content"
+        "List any social platforms where you share your content:"
       ],
       "name": "social_platforms",
       "type": "selectbox",
@@ -125,20 +125,20 @@
     {
       "label": [
         "Please add the account/user name(s)",
-        "for the above selected social media platforms"
+        "for the above selected social media platforms:"
       ],
       "name": "social_account_names",
       "type": "textarea",
       "required": true
     },
     {
-      "label": "If you have a personal website please add it below",
+      "label": "If you have a personal website please add it below:",
       "name": "personal_website",
       "type": "url",
       "required": false
     },
     {
-      "label": "Biological Sex",
+      "label": "Biological Sex:",
       "name": "bio_sex",
       "type": "selectbox",
       "required": true,
@@ -154,7 +154,7 @@
       ]
     },
     {
-      "label": "Gender",
+      "label": "Gender:",
       "name": "gender",
       "type": "selectbox",
       "required": true,
@@ -197,7 +197,7 @@
       }
     },
     {
-      "label": "Sexuality",
+      "label": "Sexuality:",
       "name": "sexuality",
       "type": "selectbox",
       "required": true,
@@ -236,7 +236,7 @@
       }
     },
     {
-      "label": "Race/Ethnicity",
+      "label": "Race/Ethnicity:",
       "name": "race",
       "type": "selectbox",
       "required": true,
@@ -265,7 +265,7 @@
       }
     },
     {
-      "label": "Nationality",
+      "label": "Nationality:",
       "name": "nation",
       "type": "selectbox",
       "required": true,
@@ -476,7 +476,7 @@
       ]
     },
     {
-      "label": "Current residing country",
+      "label": "Current residing country:",
       "name": "residing_country",
       "type": "selectbox",
       "required": true,
@@ -698,13 +698,13 @@
       ]
     },
     {
-      "label": "City and State/Province",
+      "label": "City and State/Province:",
       "name": "city_state",
       "type": "text",
       "required": true
     },
     {
-      "label": "Profession",
+      "label": "Profession:",
       "name": "jobfield",
       "type": "selectbox",
       "required": true,
@@ -758,7 +758,7 @@
       }
     },
     {
-      "label": "Political Ideology",
+      "label": "Political Ideology:",
       "name": "politics",
       "type": "selectbox",
       "required": true,
@@ -791,7 +791,7 @@
       }
     },
     {
-      "label": "Which type(s) of collaboration are you interested in",
+      "label": "Which type(s) of collaboration are you interested in?",
       "name": "collaboration_type",
       "type": "selectbox",
       "required": true,
@@ -808,7 +808,7 @@
       }
     },
     {
-      "label": "How available are you for in-person work",
+      "label": "How available are you for in-person work?",
       "name": "in_person_availability",
       "type": "selectbox",
       "required": true,
@@ -820,7 +820,7 @@
       ]
     },
     {
-      "label": "Typical availability",
+      "label": "Typical availability:",
       "name": "schedule",
       "type": "selectbox",
       "required": true,
@@ -839,13 +839,13 @@
       }
     },
     {
-      "label": "If 'Other', please describe your typical availability",
+      "label": "If 'Other', please describe your typical availability:",
       "name": "schedule_other",
       "type": "text",
       "required": false
     },
     {
-      "label": "Which themes or topics resonate most with you",
+      "label": "Which themes or topics resonate most with you?",
       "name": "themes",
       "type": "selectbox",
       "required": true,
@@ -864,7 +864,7 @@
       }
     },
     {
-      "label": "Would you prefer to appear as yourself, a character, or both",
+      "label": "Would you prefer to appear as yourself, a character, or both?",
       "name": "appearance_style",
       "type": "selectbox",
       "required": true,
@@ -876,7 +876,7 @@
       ]
     },
     {
-      "label": "Are you open to improvisational or unscripted formats",
+      "label": "Are you open to improvisational or unscripted formats?",
       "name": "improv_ok",
       "type": "selectbox",
       "required": true,
@@ -888,7 +888,7 @@
       ]
     },
     {
-      "label": "Would you like to receive updates about future casting calls or creative projects",
+      "label": "Would you like to receive updates about future casting calls or creative projects?",
       "name": "updates_opt_in",
       "type": "selectbox",
       "required": false,
@@ -929,7 +929,7 @@
       "type": "text",
       "required": true,
       "custom": {
-        "placeholder": "Type your full legal name (legal signature)"
+        "placeholder": "Type your full legal name (legal signature) ..."
       }
     }
   ]
